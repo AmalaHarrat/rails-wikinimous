@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.article-index li a {
+text-decoration: none;
+color: #9FB7FF;
+font-size: 30px;
+}
+
+.article-index p a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  }

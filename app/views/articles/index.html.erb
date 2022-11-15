@@ -1,0 +1,8 @@
+<h1>ALL ARTICLES</h1>
+
+<ul class= "article-index">
+  <% @articles.each do |article| %>
+    <li style = "list-style-type: none; color: #9FB7FF;" > <%=link_to  "#{article.title}", article_path(article.id), target:"_blank"%> </li>
+    <p style = "list-style-type: none;" > <%=link_to  "#{article.content.truncate_words(1)}", article_path(article.id), target:"_blank"%> </p>
+  <% end %>
+</ul>
